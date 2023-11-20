@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         for (const word of words) {
             if (wordCount % 5 === 0) {
-                highlightedText += `<span style="color: ${color};">${word}</span> `;
+                highlightedText += `<span class="color-circle" data-color="${color}">${word}</span> `;
             } else {
                 highlightedText += `${word} `;
             }
