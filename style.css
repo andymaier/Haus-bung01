@@ -1,0 +1,185 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header-Style */
+.header {
+    background-color: #A59094;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-text {
+    margin: 0;
+}
+
+.logo img {
+    width: 100px;
+    order: 1;
+}
+
+.navigation ul {
+    list-style: none;
+    padding: 10px;
+    margin: 5px;
+}
+
+.navigation li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.navigation li:first-child {
+    margin-left: 0;
+}
+
+.full-width-text {
+    width: 100%;
+    text-align: justify;
+    padding: 0 50px;
+    margin: 40px 0;
+}
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    margin-bottom: 40px;
+}
+
+.circle-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.color-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 7px;
+    cursor: pointer;
+}
+
+.color-circle[data-color="color 1"] {
+    background-color: #DDD8D0;
+}
+
+.color-circle[data-color="color 2"] {
+    background-color: #A59094;
+}
+
+.color-circle[data-color="color 3"] {
+    background-color: #906F70;
+}
+
+.color-circle[data-color="color 4"] {
+    background-color: #9A7C6F;
+}
+
+.color-circle[data-color="color 5"] {
+    background-color: #675B5C;
+}
+
+.color-circle[data-color="color 6"] {
+    background-color: #6C5B5B;
+}
+
+.color-circle[data-color="color 7"] {
+    background-color: #6E4C3E;
+}
+
+.color-circle[data-color="color 8"] {
+    background-color: #042D29;
+}
+.color-circle:hover {
+    border: 6px solid black;
+}
+.color-circle.active {
+    border: 6px solid black;
+}
+.text-button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px;
+}
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10px;
+}
+
+.text-above-button {
+    text-align: justify;
+    margin: 0;
+}
+
+#executeButton {
+    align-self: flex-start;
+    margin-top: 20px;
+    background-color: #042D29;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+#executeButton:hover {
+    background-color: #156A6A;
+}
+
+footer {
+    background-color: #888;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+}
+
+
+@media (max-width: 991px) {
+    footer {
+        height: 100px;
+    }
+}
+
+@media (max-width: 767px) {
+    .burger-menu-btn {
+        display: block; /* Zeige den Burger-Button nur auf kleinen Geräten an */
+        width: 40px;
+        height: 40px;
+        background-image: url('mein-burger.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .navigation.active {
+        display: block;
+
+    }
+
+    footer {
+        height: 120px;
+        position: relative;
+    }
+
+    .flex-container {
+        flex-direction: column;
+        margin-bottom: 60px;
+    }
+}
